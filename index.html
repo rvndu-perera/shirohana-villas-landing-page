@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private eco-luxury villas across Sri Lanka." />
+  <title>Shirohana Villas | Calm and Peaceful Stays in Sri Lanka</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (body) + Inria Serif (titles) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3.8 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
+    <div class="container-xxl px-3 px-lg-4">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#home">
+        <img src="assets/logo-nav.png" alt="Shirohana" height="50" />
+      </a>
+
+      <!-- Hamburger (mobile only) — triggers Offcanvas -->
+      <button class="navbar-toggler border-0 shadow-none d-lg-none p-0" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileDrawer"
+        aria-controls="mobileDrawer" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop nav (lg+) -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-3 align-items-lg-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#sites" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Branches</a>
+            <ul class="dropdown-menu branch-dropdown shadow border-0">
+              <li><a class="dropdown-item" href="#sites">Luna Lang - Benthota</a></li>
+              <li><a class="dropdown-item" href="#sites">Treasure Rock – Kurunagala</a></li>
+              <li><a class="dropdown-item" href="#sites">Villa Vista - Kelaniya</a></li>
+              <li><a class="dropdown-item" href="#sites">Saffron &amp; Blue - Nuwara Eliya</a></li>
+              <li><a class="dropdown-item" href="#sites">Boutique ‘87 - Ella</a></li>
+              <li><a class="dropdown-item" href="#sites">SinhaGiri Mansion - Polonnaruwa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers &amp; Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        </ul>
+        <a href="#offers" class="btn btn-outline-light rounded-0 btn-book mt-3 mt-lg-0">
+          Book Now <i class="bi bi-arrow-up-right ms-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- MOBILE SIDEBAR DRAWER (Offcanvas) -->
+  <div class="offcanvas offcanvas-end mobile-drawer" tabindex="-1" id="mobileDrawer" aria-labelledby="mobileDrawerLabel" data-bs-backdrop="true">
+
+    <!-- Header: logo + X close -->
+    <div class="offcanvas-header d-flex align-items-center justify-content-between w-100">
+      <a href="#home" class="d-flex align-items-center text-decoration-none" data-bs-dismiss="offcanvas">
+        <img src="assets/logo-nav.png" alt="Shirohana" height="28" />
+      </a>
+      <button type="button" class="drawer-close-btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Content -->
+    <div class="offcanvas-body">
+      <ul class="list-unstyled mb-0">
+
+        <!-- Our Branches accordion -->
+        <li class="drawer-nav-item">
+          <a class="drawer-nav-link d-flex justify-content-between align-items-center"
+             href="#branchesCollapse"
+             data-bs-toggle="collapse"
+             role="button"
+             aria-expanded="false"
+             aria-controls="branchesCollapse">
+            <span>Our Branches</span>
+            <i class="bi bi-chevron-down drawer-chevron"></i>
+          </a>
+          <div class="collapse" id="branchesCollapse">
+            <ul class="list-unstyled drawer-sub ps-3 pb-2 mb-0">
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">Luna Laguna</a></li>
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">Treasure Rock</a></li>
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">Villa Vista</a></li>
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">Boutique 87</a></li>
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">Saffron &amp; Blue</a></li>
+              <li><a class="drawer-sub-link" href="#sites" data-bs-dismiss="offcanvas">SinhaGiri Mansion</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Offers & Packages -->
+        <li class="drawer-nav-item">
+          <a class="drawer-nav-link d-block" href="#offers" data-bs-dismiss="offcanvas">
+            Offers &amp; Packages
+          </a>
+        </li>
+
+        <!-- Blogs -->
+        <li class="drawer-nav-item">
+          <a class="drawer-nav-link d-block" href="#" data-bs-dismiss="offcanvas">
+            Blogs
+          </a>
+        </li>
+
+        <!-- About Us -->
+        <li class="drawer-nav-item">
+          <a class="drawer-nav-link d-block" href="#about" data-bs-dismiss="offcanvas">
+            About Us
+          </a>
+        </li>
+      </ul>
+
+      <!-- Book Now button placed right below About Us as in design -->
+      <div class="pt-4">
+        <a href="#offers" class="btn drawer-book-btn w-100 d-flex align-items-center justify-content-center gap-2" data-bs-dismiss="offcanvas">
+          <span>Book Now</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="home">
+
+    <!-- HERO SLIDESHOW -->
+    <header class="hero d-flex align-items-end" id="heroSection">
+
+      <!-- Slide backgrounds -->
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide active" style="background-image: url('assets/hero-section/hero1.png')"></div>
+        <div class="hero-slide"       style="background-image: url('assets/hero-section/hero2.png')"></div>
+        <div class="hero-slide"       style="background-image: url('assets/hero-section/hero3.png')"></div>
+        <div class="hero-slide"       style="background-image: url('assets/hero-section/hero4.png')"></div>
+      </div>
+
+      <!-- Dark overlay -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Content -->
+      <div class="container-xxl px-3 px-lg-4 pb-5 mb-lg-4 position-relative hero-content">
+        <div class="col-lg-8 col-xl-7">
+          <h1 class="hero-title text-white mb-3">Make your stay<br />Calm and Peaceful</h1>
+          <p class="hero-subtitle text-white-50 mb-4">Immerse yourself in a serene eco-friendly villa experience crafted for mind and body.</p>
+          <a href="#about" class="btn btn-outline-light rounded-0 hero-btn">
+            Explore More <i class="bi bi-arrow-up-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container-xxl px-3 px-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="eyebrow">About Us</span>
+            <h2 class="section-title mb-4">Eight Curated Eco Luxury Escapes</h2>
+            <p class="text-body-secondary small">Shirohana Villas offers a collection of eight private eco-luxury escapes across Sri Lanka. Our portfolio spans the misty highlands of Haputale and Nuwara Eliya; the coastal soul of Kalpitiya, Kosgoda, Negombo, and Bentota; the historic landscape of Kirinda; and the quiet wilderness of Kaleliya.</p>
+            <p class="text-body-secondary small">Each property features distinct architecture, style, and curated experiences, defined by its sense of place, while delivering our signature comfort and serenity.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-grid">
+              <img class="g1" src="assets/about-section/about1.jpg" alt="Villa courtyard surrounded by hills" />
+              <img class="g2" src="assets/about-section/about2.jpg" alt="Private plunge pool" />
+              <img class="g3" src="assets/about-section/about3.jpg" alt="Villa bedroom with a mountain view" />
+              <img class="g4" src="assets/about-section/about4.jpg" alt="Open kitchen and dining area" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITES -->
+    <section id="sites" class="section pt-0">
+      <div class="container-xxl px-3 px-lg-4">
+        <div class="row g-3 sites-wrap">
+
+          <div class="col-md-6 col-lg-4 d-flex flex-column gap-3 mt-lg-5 pt-lg-5">
+            <article class="site-card ratio-a">
+              <img src="assets/sites-section/site1.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+            <article class="site-card ratio-a">
+              <img src="assets/sites-section/site2.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex flex-column gap-3">
+            <article class="site-card ratio-b">
+              <img src="assets/sites-section/site3.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+            <article class="site-card ratio-b">
+              <img src="assets/sites-section/site4.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+          </div>
+
+          <div class="col-md-12 col-lg-4 d-flex flex-column gap-3">
+            <div class="mb-lg-4">
+              <span class="eyebrow">Our Branches</span>
+              <h2 class="section-title mb-0">Explore Our Sites</h2>
+            </div>
+            <article class="site-card ratio-a">
+              <img src="assets/sites-section/site5.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+            <article class="site-card ratio-a">
+              <img src="assets/sites-section/site6.jpg" alt="Eco Natural Villa" />
+              <div class="site-meta"><div><small>Colombo</small><h3>Eco Natural Villa</h3></div>
+              <a href="#" class="btn btn-light btn-sm">View Info <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+            </article>
+          </div>
+
+        </div>
+        <div class="sites-fade"></div>
+        <div class="text-center sites-more">
+          <a href="#" class="btn btn-outline-dark">Explore More <i class="bi bi-arrow-up-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers" class="section offers-section py-5">
+      <div class="container-xxl px-3 px-lg-4">
+        <div class="row align-items-center align-items-lg-stretch g-4 g-lg-5">
+
+          <!-- Right on desktop, but FIRST on mobile (< lg) -->
+          <div class="col-lg-6 order-1 order-lg-2 offers-img-col mb-4 mb-lg-0">
+            <img src="assets/offers-section/packages.png" alt="Adventure packages collage" class="offers-img" />
+          </div>
+
+          <!-- Left on desktop, but SECOND on mobile (< lg) -->
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center pe-lg-4">
+            <span class="eyebrow mb-2">Our Offers</span>
+            <h2 class="section-title mb-3">Offers and Packages</h2>
+            <p class="text-body-secondary small mb-4">From scuba diving in Kalpitiya to Hiking in Haputale, our curated packages invite you to discover and fall in love with the beauty of Sri Lanka.</p>
+            
+            <!-- 2x4 Bordered Grid Table -->
+            <div class="offers-grid mb-4">
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Wild Life Safaris</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Outdoor Camping</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Rafting Adventures</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Scuba Diving</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>ATV Rides</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>River Boat Rides</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Jets key Rides</span>
+              </a>
+              <a href="#" class="offers-grid-item">
+                <i class="bi bi-chevron-double-right"></i>
+                <span>Zip Lines</span>
+              </a>
+            </div>
+
+            <!-- Quick Booking + Explore More (Aligned Right) -->
+            <div class="d-flex align-items-center justify-content-end gap-4 mt-2">
+              <a href="#" class="btn btn-quick-booking text-decoration-none small fw-medium">Quick Booking</a>
+              <a href="#" class="btn btn-outline-dark rounded-0 px-4 py-2 small">
+                Explore More <i class="bi bi-arrow-up-right ms-2"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="container-xxl px-3 px-lg-4">
+        <div class="row g-4 align-items-stretch">
+
+          <!-- 1. Milli Mack -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp1.jpg" alt="Milli Mack" class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Milli Mack</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“We stayed at Villa Serenity for a week, and it exceeded every expectation. The ocean views from the terrace were breathtaking, and the private pool was pristine. The staff went above and beyond to make our family stay memorable. We’re already planning our return!”</p>
+            </article>
+          </div>
+
+          <!-- 2. Elena R. -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp2.jpg" alt="Elena R." class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Elena R.</h3>
+                  <span class="review-role">Germany</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“From the seamless check-in process to the personalized concierge service, every detail was handled flawlessly. Waking up to the sound of the waves and enjoying fresh breakfast prepared daily at the villa was pure luxury.”</p>
+            </article>
+          </div>
+
+          <!-- 3. Heading Block (Top-right on desktop, top on mobile) -->
+          <div class="col-lg-4 order-first order-lg-0">
+            <div class="reviews-head h-100 d-flex flex-column justify-content-between mb-4 mb-lg-0">
+              <div class="d-flex justify-content-end">
+                <svg class="quote-mark" width="48" height="40" viewBox="0 0 46 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12.5 0C5.6 0 0 5.6 0 12.5c0 4.5 2.4 8.5 6 10.8L2.2 38h12.1l4-14.7V0h-5.8zm25 0c-6.9 0-12.5 5.6-12.5 12.5 0 4.5 2.4 8.5 6 10.8L27.2 38h12.1l4-14.7V0h-5.8z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h2 class="section-title mb-0">Our Guests’<br />Feedbacks</h2>
+            </div>
+          </div>
+
+          <!-- 4. Sarath Jay -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp3.jpg" alt="Sarath Jay" class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Sarath Jay</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“We booked a 5-bedroom villa for a milestone birthday with friends. The layout was spacious enough for everyone to have privacy while providing amazing common areas to cook, lounge, and celebrate together. Highly recommended!”</p>
+            </article>
+          </div>
+
+          <!-- 5. Sara Saf. -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp4.jpg" alt="Sara Saf." class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Sara Saf.</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“The villa was fully equipped with top-tier amenities, comfortable beds, and a kitchen that had everything we needed. The interior design was elegant yet cozy. It really felt like staying in a private retreat.”</p>
+            </article>
+          </div>
+
+          <!-- 6. Davy Johns -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp5.jpg" alt="Davy Johns" class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Davy Johns</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“If you are looking for peace and quiet away from crowded resorts, this is the place. Nestled in the hills with panoramic views, we enjoyed total seclusion while still being only a 10-minute drive from the beach.”</p>
+            </article>
+          </div>
+
+          <!-- 7. St. John -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp6.jpg" alt="St. John" class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">St. John</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“Traveling with toddlers can be stressful, but the villa team provided high chairs, baby gates, and pool safety measures beforehand. It allowed us to relax completely and enjoy our vacation together.”</p>
+            </article>
+          </div>
+
+          <!-- 8. Salina Wil. -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp7.jpg" alt="Salina Wil." class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Salina Wil.</h3>
+                  <span class="review-role">CEO @Multilac</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“Photos usually look better than reality, but in this case, the villa was even more gorgeous in person. Five-star service, gorgeous architecture, and smooth booking from start to finish.”</p>
+            </article>
+          </div>
+
+          <!-- 9. Kenji N. -->
+          <div class="col-md-6 col-lg-4">
+            <article class="review-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/feedback-section/dp8.jpg" alt="Kenji N." class="rounded-circle review-avatar" />
+                <div>
+                  <h3 class="review-name mb-1">Kenji N.</h3>
+                  <span class="review-role">CEO @Codex</span>
+                </div>
+              </div>
+              <p class="review-text mb-0">“The high-speed Wi-Fi allowed me to handle remote work meetings seamlessly, while the serene outdoor lounge served as the best desk view I’ve ever had. A perfect balance of productivity and leisure!”</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer text-white">
+    <div class="container-xxl px-3 px-lg-4 pt-5 pb-4">
+      <a href="#home" class="d-inline-block mb-5">
+        <img src="assets/logo-footer.png" alt="Shirohana Villas" height="54" />
+      </a>
+      <div class="row g-4 g-lg-5 justify-content-between">
+        
+        <!-- Contact -->
+        <div class="col-md-6 col-lg-3">
+          <h5 class="footer-title mb-3">Contact</h5>
+          <ul class="list-unstyled footer-contact mb-0">
+            <li class="d-flex align-items-start gap-3 mb-3">
+              <i class="bi bi-buildings fs-5 text-white-50 mt-1"></i>
+              <span><strong class="d-block mb-1">SHIROHANA GARDEN VILLAS</strong>32B Macna Marcan Mawatha,<br />Colombo 3, Sri Lanka</span>
+            </li>
+            <li class="d-flex align-items-center gap-3 mb-3">
+              <i class="bi bi-envelope fs-5 text-white-50"></i>
+              <a href="mailto:villas@shirohanaflowers.com">villas@shirohanaflowers.com</a>
+            </li>
+            <li class="d-flex align-items-start gap-3">
+              <i class="bi bi-telephone fs-5 text-white-50 mt-1"></i>
+              <span>(+94) 77 108 0859<br />(+94) 77 627 3252</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Our Villas -->
+        <div class="col-12 col-md-3 col-lg-2">
+          <h5 class="footer-title mb-3">Our Villas</h5>
+          <ul class="list-unstyled footer-links mb-0">
+            <li class="mb-2"><a href="#sites">Luna Laguna</a></li>
+            <li class="mb-2"><a href="#sites">Treasure Rock</a></li>
+            <li class="mb-2"><a href="#sites">Villa Vista</a></li>
+            <li class="mb-2"><a href="#sites">Boutique 87</a></li>
+            <li class="mb-2"><a href="#sites">Saffron &amp; Blue</a></li>
+            <li class="mb-0"><a href="#sites">SinhaGiri Mansion</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-12 col-md-3 col-lg-2">
+          <h5 class="footer-title mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links mb-0">
+            <li class="mb-2"><a href="#home">Home</a></li>
+            <li class="mb-2"><a href="#about">About Us</a></li>
+            <li class="mb-2"><a href="#offers">Packages</a></li>
+            <li class="mb-2"><a href="#">Contacts</a></li>
+            <li class="mb-0"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- News Alert Subscription -->
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <h5 class="footer-title mb-3">News Alert <br> Subscription</h5>
+          <form id="subscribeForm" class="input-group mb-2" novalidate>
+            <input type="email" class="form-control rounded-0 border-0 py-2 px-3" placeholder="Enter your E-mail" aria-label="Email address" required />
+            <button class="btn btn-subscribe rounded-0 px-3 px-sm-4 fw-medium" type="submit">Subscribe</button>
+          </form>
+          <p class="footer-note mb-4" id="subscribeMsg">Receive exclusive offers, travel inspiration, and updates from Isle &amp; Garden. Unsubscribe anytime.</p>
+          
+          <h5 class="footer-title mb-3">Follow Us on</h5>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-hr my-5" />
+      <p class="text-center footer-copy mb-0">Copyright &copy; 2026 Shirohana. All Rights Reserved. Web Design and Development by Rvndu.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.8 JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
